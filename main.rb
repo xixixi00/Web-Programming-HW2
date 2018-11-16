@@ -11,7 +11,7 @@ configure do
 end
 
 configure :development do
-  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/database.db")
+  DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
   DataMapper.auto_upgrade!
 end
 

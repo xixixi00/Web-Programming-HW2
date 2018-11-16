@@ -12,7 +12,7 @@ gem "dm-migrations"
 
 gem "thin"
 
-gem "pg", :group => :production
+gem "pg", :group => :development
 
 gem "dm-postgres-adapter"
 
