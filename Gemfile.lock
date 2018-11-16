@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    daemons (1.2.5)
+    daemons (1.2.6)
     data_objects (0.10.17)
       addressable (~> 2.1)
     dm-core (1.2.1)
@@ -23,31 +23,30 @@ GEM
       data_objects (= 0.10.17)
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
-    eventmachine (1.2.5)
-    ffi (1.9.18)
-    mustermann (1.0.1)
-    pg (0.21.0)
-    public_suffix (3.0.1)
-    rack (2.0.3)
-    rack-protection (2.0.0)
+    eventmachine (1.2.7)
+    ffi (1.9.25)
+    mustermann (1.0.3)
+    pg (1.1.3)
+    public_suffix (3.0.3)
+    rack (2.0.6)
+    rack-protection (2.0.4)
       rack
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    sass (3.5.3)
+    sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sinatra (2.0.0)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
-    slim (3.0.9)
+    slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
-      tilt (>= 1.3.3, < 2.1)
-    sqlite3 (1.3.13)
+      tilt (>= 2.0.6, < 2.1)
     temple (0.8.0)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
@@ -63,13 +62,11 @@ DEPENDENCIES
   dm-migrations
   dm-postgres-adapter
   dm-sqlite-adapter
-  do_postgres
   pg
   sass
   sinatra
   slim
-  sqlite3
   thin
 
 BUNDLED WITH
-   1.16.0
+   1.17.1
