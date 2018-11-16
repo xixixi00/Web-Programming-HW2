@@ -1,0 +1,14 @@
+<body>
+    <br>
+    <h1><%=@student.firstname%> <%=@student.lastname%></h1>
+    <p>First name: <%=@student.firstname%></p>
+    <p>Last name: <%=@student.lastname%></p>
+    <p>Birthday: <%=@student.birthday%></p>
+    <p>Address: <%=@student.address%></p>
+    <p>Student ID: <%=@student.stdid%></p>
+    <br>
+    <a href = "/students/<%=@student.stdid%>/edit">Edit</a>
+    <a href = '/students/<%=@student.stdid%>/delete'>Delete<a>
+    <br>
+    <a href = "/students">Back to List of Student</a>
+</body>

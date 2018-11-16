@@ -1,0 +1,17 @@
+<body>
+  <h1>New Student Information: </h1>
+    <form action="/students/add" method='post'>
+      First Name:<br>
+      <input type="text" name=student[firstname] required><br>
+      Last Name:<br>
+      <input type="text" name=student[lastname] required><br>
+      Birthday (MM/DD/YYYY):<br>
+      <input type="text" name=student[birthday] pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"><br>
+      Address:<br>
+      <input type="text" name=student[address]><br>
+      Student ID(Number only):<br>
+      <input type="text" name=student[stdid] pattern="\d+" required><br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+</body>

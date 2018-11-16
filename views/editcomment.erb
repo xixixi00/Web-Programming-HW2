@@ -1,0 +1,15 @@
+<body>
+<h3>Edit comment</h3>
+  <form action="/comments/<%=@comment.id%>/edit" method='post'>
+	  Name:<br>
+	  <input type="text" name=comment[name] value="<%=@comment.name%>" equired></br>
+    Content:<br>
+    <input type="text" name=comment[comment_body] value="<%=@comment.comment_body%>" required><br>
+    <br>
+    <input type="hidden" name=comment[created_at] value="<%=Time.now%>">
+    <br>
+    <input type="submit" value="Confirm">
+ </form>
+ <br>
+ <a href = "/comments/<%=@comment.id%>">Back to Previous Page</a>
+</body>

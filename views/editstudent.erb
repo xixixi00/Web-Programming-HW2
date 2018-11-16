@@ -1,0 +1,21 @@
+<body>
+  <h1>Edit Student Information</h1>
+
+  <form action="/students/<%=@student.stdid%>/edit" method='post'>
+    First name:<br>
+    <input type="text" name=student[firstname] value="<%=@student.firstname%>" required><br>
+    Last name:<br>
+    <input type="text" name=student[lastname] value="<%=@student.lastname%>" required><br>
+    Birthday (MM/DD/YYYY):<br>
+    <input type="text" name=student[birthday] value="<%=@student.birthday%>" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"><br>
+    Address:<br>
+    <input type="text" name=student[address] value="<%=@student.address%>"><br>
+    Student ID:<br>
+    <input type="text" name=student[stdid] value="<%=@student.stdid%>" pattern="\d+" required><br>
+    <br>
+    <input type="submit" value="Confirm">
+  </form>
+  <br>
+  <a href = "/students/<%=@student.stdid%>">Back to Pevious Page</a>
+
+</body>

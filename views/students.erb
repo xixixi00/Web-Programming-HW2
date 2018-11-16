@@ -1,0 +1,15 @@
+<body>
+	<h2>Students</h2>
+
+	<% if @students.any? %>
+	<ul>
+		<% @students.each do |student|%>
+ 		<li><a href = '/students/<%=student.stdid%>'><%=student.firstname%> <%=student.lastname%><a> </li>
+ 		<% end %>
+	</ul>
+	<% end %>
+
+	<a href = '/students/add'>Add a new student</a>
+</body>
+
+

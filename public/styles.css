@@ -1,0 +1,49 @@
+html {
+    background-color: #ccc;
+}
+
+body {
+    width:700px;
+    height:900px;
+    background-color: #dddcd9;
+    margin:2em auto 2em;
+    padding:25px;
+    position:relative;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    
+}
+
+h1 {
+    color:#903;
+    font: 32px/1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+

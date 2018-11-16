@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%=@title || "Student Information System"%></title>
+        <link href="/styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <img src="/images/students.jpg" alt="logo" width=100%>
+        <h1>Student Information System</h1>
+        <nav>
+            <ul>
+                <li><a href = '/'>Home</a></li>
+                <li><a href = '/about'>About</a></li>
+                <li><a href = '/contact'>Contact</a></li>
+                <li><a href = '/students'>Students</a></li>
+	            <li><a href = '/comments'>Comment</a></li>
+                <li><a href = '/video'>Video</a></li>
+                <%if session[:admin]%>
+                    <li><a href = '/logout'>Logout</a></li>
+                <%else%>
+                    <li><a href = '/login'>Login</a></li>
+                <%end%>
+            </ul>
+        </nav>
+        <%= yield %>
+    </body>
+</html>

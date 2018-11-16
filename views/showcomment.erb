@@ -1,0 +1,14 @@
+<html>
+    <br>
+    <h2>Comment Detail Info</h2>
+    <body>
+        <p>Name: <%=@comment.name%></p>
+        <p>Comment: <%=@comment.comment_body%></p>
+        <p>Published Date: <%=@comment.created_at%></p>
+        <br>
+        <a href = "/comments/<%=@comment.id%>/edit">Edit</a>
+        <a href = '/comments/<%=@comment.id%>/delete'>Delete<a>
+    </body>
+    <br>
+    <a href = "/comments">Back to List of Comments</a>
+</html>

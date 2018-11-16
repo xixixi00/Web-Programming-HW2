@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>New Comment</h3>
+  <form action="/comments/new" method='post'>
+	  Your Name:<br>
+	  <input type="text" name=comment[name] required></br>
+    Comment:<br>
+    <input type="text" name=comment[comment_body] required><br>
+    <input type="hidden" name=comment[created_at] value="<%=Time.now%>">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+<html>
