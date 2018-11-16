@@ -15,6 +15,11 @@ configure :development do
   DataMapper.auto_upgrade!
 end
 
+configure :production do
+    DataMapper.setup(:default, ENV['DATABASE_URL'])
+    DataMapper.auto_upgrade!
+end
+
 get '/' do
   erb :home
 end
